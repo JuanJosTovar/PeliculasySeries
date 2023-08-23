@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background: linear-gradient(to right,#000, #312fbd);
+    display: flex;
+    justify-content: space-between;
+}
+.titulo{
+    color: #fff;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.menu{
+     display: flex;
+     align-items: center;
+    padding-right: 150px;
+}
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    padding-right: 40px;
+}
+.menu a:hover{
+    font-size: 20px;
+}
+
+#login{
+    padding-left: 100px;
+}
+.busqueda{
+    background: linear-gradient(to right,#000, hsl(241, 60%, 46%));
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #394482;
+    
+}
+/*
+.barra{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right,#312fbd, #000);
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    border: solid 1px #373f9a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}*/
+.lupa{
+    margin-left: 10px;
+    padding-right: 5px;
+    
+}
+#categoria{
+    color: #fff;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.botones{
+    padding-top: 30px;
+    background: linear-gradient(to right,#000, hsl(241, 60%, 46%));
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+.boton{
+    color: #fff;
+    background-color: transparent;
+    border-radius: 20px;
+    border: solid 3px #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+button:hover{
+    color: #000;
+    background-color: #fff;
+}
+/*
+.texto{
+    width: 1328px;
+    background-color: transparent;
+    border: none;
+}
+*/
+
+.peliculas{
+    background: linear-gradient(to right,#000, hsl(241, 60%, 46%));
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 61vh;
+}
+.categoriati{
+    background: linear-gradient(to right,#000, hsl(241, 60%, 46%));
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    background-color: #11113a;
+    border: solid 2px #353e7d;
+    color: #fff;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+    border-radius: 15px;
+}
+.container h2{
+    font-weight: normal;
+}
+
+.container:hover{
+    transition: 1s;
+    transform: scale(70px);
+    box-shadow: 0 0 10px 10px rgb(151, 142, 142);
+}
+
+.simbolo{
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.portada{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+    height: 50%;
+}
+#punto{
+    width: 12px;
+    height: 12px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.creador{
+    padding-right: 20px;
+    font-size: 10px;
+    justify-content: flex-end;
+    
+}
+.info h2{
+    padding-bottom: 10px;
+}
+
+.final{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+a{
+    text-decoration: none;
+}
+.buscar {
+    right: 0;
+   
+    display: flex;
+    width: 90%;
+    height: 7px;
+    padding-top: 11px;
+    padding-bottom: 20px;
+    border: 1px solid #ffffff49;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 37px;
+    margin-left: 50px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right,#312fbd, #000);
+ }
+ 
+ .buscar input{
+    padding-bottom: 10px;
+    width: 1250px;
+    height: 76%;
+    background: none;
+    color: #FFFFFF;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+ }
+ .buscar .lbl-buscar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid #c7c7c7;
+ }
+.container .boton{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(54, 8, 84);
+    border: solid 1px rgba(56, 12, 78, 0.534);
+    font-size: 90%;
+}
+.container .boton:hover{
+    color: #fff;
+    font-size: 98%;
+}
+.ver-modal .boton{
+    margin-left: 100px;
+}
+
+button:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+
+/* ... Tu CSS anterior ... */
+
+/* Estilo para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #11113a;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #353e7d;
+    width: 80%;
+    color: #fff;
+}
+
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
