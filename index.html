@@ -559,3 +559,24 @@
         </a>
     </section>
     <script src="./js/modal.js"></script>
+        <script>
+    // Obtener los elementos relevantes
+    const searchInput = document.getElementById('searchInput');
+    const peliculasContainer = document.querySelector('.peliculas');
+    const peliculas = Array.from(peliculasContainer.querySelectorAll('.container'));
+
+    // Agregar un evento de entrada al campo de búsqueda
+    searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        // Filtrar y mostrar u ocultar los elementos según el término de búsqueda
+        peliculas.forEach(pelicula => {
+            const title = pelicula.querySelector('h2').textContent.toLowerCase();
+            if (title.includes(searchTerm)) {
+                pelicula.style.display = 'block';
+            } else {
+                pelicula.style.display = 'none';
+            }
+        });
+    });
+</script>
