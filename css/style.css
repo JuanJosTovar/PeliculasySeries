@@ -259,3 +259,172 @@ button:hover{
     font-weight: bold;
     cursor: pointer;
 }
+
+/* ... Tu CSS posterior ... */
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width:1279px){
+    .menu{
+        padding-right: 146px;
+    }
+    #login {
+        padding-left: 63px;
+    }
+    .botones{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 3px;
+        padding-right: 12px;
+        gap: 15px;
+    }
+    .botones .boton{
+        width: 30vw;
+        
+    }
+}
+@media screen and (max-width:920px){
+    .menu{
+        padding-right: 3px;
+    }
+    .titulo{
+        padding-left: 42px;
+    }
+    .botones{
+    padding-left: 79px;
+    padding-right: 90px;
+    }
+}
+@media screen and (max-width:769px){
+    header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .titulo{
+        padding-left: 170px;
+    }
+    .buscar{
+     width: 84%;
+     margin-left: 37px;
+    }
+    .boton{
+        margin-bottom: 13px;
+    }
+    .menu a{
+        padding: 0 20px;
+    }
+    .container h2{
+        font-size: 120%;
+    }
+    .container span{
+        font-size: 90%;
+    }
+    .trailer .ver-trailer{
+        font-size: 90%;
+        width: 70%;
+    }
+    .trailer .ver-modal{
+        font-size: 90%;
+        width: 45%;
+        margin-left: -30px;
+    }
+}
+@media screen and (max-width:480px){
+        header{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .titulo {
+            padding-left: 100px;
+        }
+        .container h2{
+            font-size: 100%;
+        }
+        .container span{
+            font-size: 70%;
+        }
+        .trailer{
+            margin-right: 40px;
+        }
+        .trailer .ver-trailer{
+            font-size: 60%;
+            width: 180%;
+        }
+        .trailer .ver-modal{
+            font-size: 60%;
+            width: 195%;
+            margin-left: -55px;
+            
+        }
+        .final{
+            width: 170%;
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+            width: 107%;
+            font-size: 63%;
+            padding-right: 0;
+        }
+        .menu a{
+            padding-right: 35px;
+        }
+        #login {
+            padding-left: 1px;
+        }
+        .barra{
+            margin-right: 26px;
+            margin-left: 35px;
+        }
+        #categoria {
+            margin-left: 41px;
+            margin-top: 16px;
+        }
+        .portada{
+            height: 52%;
+        }
+        .container{
+            width: 250px;
+            height:auto;
+        }
+        .info {
+            width: 70%;
+            height: 50%;
+        }
+        span{
+            font-size: 70%;
+            width: 140%;
+        }
+        .info h2{
+            width: 140%;
+            font-size: 80%;
+            padding-bottom: 2px;
+        }
+        .final {
+            padding-top: 10px;
+            width: 160%;
+        
+        }
+        .bucar{
+            width: 80%;
+            margin-left: 32px;
+        }
+        .botones .boton{
+            width: 38vw;
+            
+        }
+}
+@media screen and (max-width:352px){
+    .titulo{
+        padding-left: 140px;
+    }
+    .menu{
+        font-size: 80%;
+        padding-left: 25px;
+        padding-top: 5px;
+    }
+    .boton{
+        font-size: 80%;
+    }
+
+}
