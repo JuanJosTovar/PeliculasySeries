@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PELISERIES</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h2 class="titulo">PELISERIES</h2>
+        <div class="menu">
+            <a  href="./index.html">INICIO</a>
+            <a href="./peliculas.html">PELICULAS</a>
+            <a href="./series.html">SERIES</a>
+            <a id = "login" href="login.html">LOGIN</a>
+        </div>
+    </header>
+    <div class="busqueda">
+        <figure class="buscar">
+           <p class="barra" href=""><img class="lupa" src="./images/lupa.svg" alt="lupa"><input id="searchInput" class="texto" type="text" placeholder="Buscar..."><label class ="lbl-buscar"></label></p> 
+        </figure>
+        <p id="categoria">CATEGORIAS</p>
+    </div>
+    <div class="botones">
+        <button class="boton" onclick="filterByCategory('todo')">TODO</button>
+        <button class="boton" onclick="filterByCategory('romance')">ROMANCE</button>
+        <button class="boton" onclick="filterByCategory('terror')">TERROR</button>
+        <button class="boton" onclick="filterByCategory('comedia')">COMEDIA</button>
+        <button class="boton" onclick="filterByCategory('accion')">ACCION</button>
+        <button class="boton" onclick="filterByCategory('drama')">DRAMA</button>
+        <button class="boton" onclick="filterByCategory('fantasia')">FANTASIA</button>
+    </div>
+    <section class="peliculas">
+        <a href="#">
+            <div class="container" data-category="accion">
+                <img class="portada" src="./images/casadepapel.webp" alt="casa de papel">
+                <div class="info">
+                    <h2>LA CASA DE PAPEL</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">Ocho ladrones toman rehenes en la Fabrica Nacional de la Moneda y Timbre de España, mientras el lider de la banda manipula a la policia para cumplir con su plan.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY CHIAKI SATO</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="accion">
+                <img class="portada" src="./images/100.jpeg" alt="casa de papel">
+                <div class="info">
+                    <h2>LOS 100</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">Un apocalipsis nuclear destruye la vida humana en la Tierra. Los únicos supervivientes son los habitantes de las estaciones espaciales internacionales.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY JASON ROTTENBERG</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="drama">
+                <img class="portada" src="./images/anne.jpeg" alt="casa de papel">
+                <div class="info">
+                    <h2>ANNE WITH AN E</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">En la década de 1890, una niña huérfana de 13 años es enviada por error a vivir con hermanos mayores a la Isla del Príncipe Eduardo.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY MOIRA WALLEY</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="drama">
+                <img class="portada" src="./images/bad.jpeg" alt="casa de papel">
+                <div class="info">
+                    <h2>BREAKING BAD</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">El profesor calmado de química de una secundaria, Walter White cree que su vida no puede ser peor. Su salario apenas le alcanza para sostener a su familia.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY BETTER CALL SAUL</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+        <div class="container" data-category="romance">
+            <img class="portada" src="./images/betty.jpeg" alt="casa de papel">
+            <div class="info">
+                <h2>BETTY LA FEA</h2>
+                <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">Beatriz Pinzón tiene un título en finanzas. Es muy inteligente, pero nada atractiva. Para su suerte, consigue empleo en una de las compañías más importantes en el mundo de la moda, Ecomoda.</span>
+                <div class="final">
+                    <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY FERNANDO GAITAN</span>
+                    <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                </div>
+            </div>
+        </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="terror">
+                <img class="portada" src="./images/dahmer.webp" alt="casa de papel">
+                <div class="info">
+                    <h2>DAHMER</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">La historia de uno de los asesinos en serie más conocidos de Estados Unidos, contada desde los puntos de vista de sus víctimas.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY CRYAN MURPHY</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="fantasia">
+                <img class="portada" src="./images/dark.jpeg" alt="casa de papel">
+                <div class="info">
+                    <h2>DARK</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">La desaparición de dos niños muestra los vínculos entre cuatro familias y expone el pasado de una pequeña ciudad.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY BARAN BO ODAR</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="drama">
+                <img class="portada" src="./images/doctor.jpeg" alt="casa de papel">
+                <div class="info">
+                    <h2>THE GOOD DOCTOR</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">Un cirujano joven y autista que padece el síndrome del sabio empieza a trabajar en un hospital prestigioso. Allá tendrá que vencer el escepticismo con el que sus colegas lo reciben.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY DAVID SHORE</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="fantasia">
+                <img class="portada" src="./images/dragon.jpeg" alt="casa de papel">
+                <div class="info">
+                    <h2>LA CASA DEL DRAGON</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">La historia de la familia Targaryen, 200 años antes de los eventos que tuvieron lugar en "Game of Thrones".</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY GORGE R.R MARTIN</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="romance">
+                <img class="portada" src="./images/edu.jpeg" alt="casa de papel">
+                <div class="info">
+                    <h2>SEX EDUCATION</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">Otis siempre tiene una respuesta respecto al sexo. Otis se une a su amiga Maeve para abrir una clínica de terapia sexual en la escuela.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY LAURIE NUNN</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="comedia">
+                <img class="portada" src="./images/horse.jpeg" alt="casa de papel">
+                <div class="info">
+                    <h2>BOJACK HORSEMAN</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">BoJack Horseman es un olvidado actor que supo vivir sus días de gloria gracias a una comedia televisiva, y que se enfrenta a las más duras crisis existenciales y adicciones mientras intenta volver.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY RAPHEL BOB-WAKSBERG</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="drama">
+                <img class="portada" src="./images/narcos.jpeg" alt="casa de papel">
+                <div class="info">
+                    <h2>NARCOS</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">La historia del ascenso y caída del capo colombiano Pablo Escobar y de los agentes de la DEA que lucharon para atraparlo. Se intenta enfocar la narración de manera ecuánime desde el punto de vista del propio Escobar y del agente.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY CHRIS BRANCATO</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="accion">
+                <img class="portada" src="./images/palpito.jpeg" alt="casa de papel">
+                <div class="info">
+                    <h2>PALPITO</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">La esposa de Simón es asesinada para quitarle el corazón y trasplantarlo a la esposa de un poderoso millonario. En busca de venganza, Simón se lanza al peligroso mundo del tráfico de órganos.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY LEONARDO PADRON</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="comedia">
+                <img class="portada" src="./images/south.jpeg" alt="casa de papel">
+                <div class="info">
+                    <h2>SOUTH PARK</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">Una serie de dibujos animados que no es para niños. De hecho, su objetivo parece ser el ofender a la mayoría de personas posibles, mientras presenta las aventuras de Stan, Kyle, Kenny y Cartman.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY TREY PARKER</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="terror">
+                <img class="portada" src="./images/stranger.webp" alt="casa de papel">
+                <div class="info">
+                    <h2>STRANGER THINGS</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">Cuando un niño desaparece, sus amigos, la familia y la policía se ven envueltos en una serie de eventos misteriosos al tratar de encontrarlo. Su ausencia coincide con el avistamiento de una criatura terrorífica.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY MATT DUFFLER</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="drama">
+                <img class="portada" src="./images/you.jpeg" alt="casa de papel">
+                <div class="info">
+                    <h2>YOU</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">Un hombre encantador y muy peligroso toma medidas extremas para introducirse en la vida de las mujeres de las que se enamora.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY SERA GAMBLE</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div class="container" data-category="terror">
+                <img class="portada" src="./images/sabrina.jpeg" alt="casa de papel">
+                <div class="info">
+                    <h2>SABRINA</h2>
+                    <span><img class="simbolo" id="punto" src="./images/circulo.svg" alt="info">Sabrina Spellman es una adolescente con poderes mágicos que proviene de una familia de brujas y vive con sus tías, Hilda y Zelda, y un travieso gato que puede hablar, Salem. A medida que crece y atraviesa la secundaria y la universidad.</span>
+                    <div class="final">
+                        <span class="creador"><img class="simbolo"src="./images/persona.svg" alt="creador">BY MELISSA JOAN HART</span>
+                        <span class="creador"><img class="simbolo" src="./images/tag.svg" alt="tipo">SERIE</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </section>
+    <script>
+        // Obtener los elementos relevantes
+        const searchInput = document.getElementById('searchInput');
+        const peliculasContainer = document.querySelector('.peliculas');
+        const peliculas = Array.from(peliculasContainer.querySelectorAll('.container'));
+
+        // Agregar un evento de entrada al campo de búsqueda
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.toLowerCase();
+
+            // Filtrar y mostrar u ocultar los elementos según el término de búsqueda
+            peliculas.forEach(pelicula => {
+                const title = pelicula.querySelector('h2').textContent.toLowerCase();
+                if (title.includes(searchTerm)) {
+                    pelicula.style.display = 'block';
+                } else {
+                    pelicula.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <script src="./js/filtro.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/login.js"></script>
+    
+</body>
+</html>

@@ -24,17 +24,17 @@
         <p id="categoria">CATEGORIAS</p>
     </div>
     <div class="botones">
-        <a href="index.html"><button class="boton">TODO</button></a>
-        <a href="romance.html"><button class="boton">ROMANCE</button></a>
-        <a href="terror.html"><button class="boton">TERROR</button></a>
-        <a href="comedia.html"><button class="boton">COMEDIA</button></a>
-        <a href="accion.html"><button class="boton">ACCION</button></a>
-        <a href="drama.html"><button class="boton">DRAMA</button></a>
-        <a href="fantasia.html"><button class="boton">FANTASIA</button></a>
+        <button class="boton" onclick="filterByCategory('todo')">TODO</button>
+        <button class="boton" onclick="filterByCategory('romance')">ROMANCE</button>
+        <button class="boton" onclick="filterByCategory('terror')">TERROR</button>
+        <button class="boton" onclick="filterByCategory('comedia')">COMEDIA</button>
+        <button class="boton" onclick="filterByCategory('accion')">ACCION</button>
+        <button class="boton" onclick="filterByCategory('drama')">DRAMA</button>
+        <button class="boton" onclick="filterByCategory('fantasia')">FANTASIA</button>
     </div>
     <section class="peliculas">
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="accion">
                 <img class="portada" src="./images/casadepapel.webp" alt="casa de papel">
                 <div class="info">
                     <h2>LA CASA DE PAPEL</h2>
@@ -51,7 +51,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="accion">
                 <img class="portada" src="./images/rapidos.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>RAPIDOS Y FURIOSOS 10</h2>
@@ -76,7 +76,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="terror">
                 <img class="portada" src="./images/papa.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>EL EXORCISTA DEL PAPA</h2>
@@ -99,7 +99,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="drama">
                 <img class="portada" src="./images/air.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>AIR</h2>
@@ -116,7 +116,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="fantasia">
                 <img class="portada" src="./images/avatar.webp" alt="casa de papel">
                 <div class="info">
                     <h2>AVATAR</h2>
@@ -133,7 +133,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="comedia">
                 <img class="portada" src="./images/barbie2.webp" alt="casa de papel">
                 <div class="info">
                     <h2>BARBIE</h2>
@@ -150,7 +150,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="comedia">
                 <img class="portada" src="./images/elementos.webp" alt="casa de papel">
                 <div class="info">
                     <h2>ELEMENTOS</h2>
@@ -167,7 +167,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="fantasia">
                 <img class="portada" src="./images/encanto.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>ENCANTO</h2>
@@ -184,7 +184,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="drama">
                 <img class="portada" src="./images/huellas.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>MIS HUELLAS A CASA</h2>
@@ -201,7 +201,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="comedia">
                 <img class="portada" src="./images/mario.webp" alt="casa de papel">
                 <div class="info">
                     <h2>MARIO</h2>
@@ -218,7 +218,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="fantasia">
                 <img class="portada" src="./images/moana.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>MOANA</h2>
@@ -235,7 +235,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="accion">
                 <img class="portada" src="./images/oppenheimer.png" alt="casa de papel">
                 <div class="info">
                     <h2>OPPENHEIMER</h2>
@@ -252,7 +252,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="comedia">
                 <img class="portada" src="./images/red.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>RED</h2>
@@ -269,7 +269,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="drama">
                 <img class="portada" src="./images/serpiente.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>EL ABRAZO DE LA SERPIENTE</h2>
@@ -286,7 +286,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="accion">
                 <img class="portada" src="./images/100.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>LOS 100</h2>
@@ -303,7 +303,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="drama">
                 <img class="portada" src="./images/anne.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>ANNE WITH AN E</h2>
@@ -320,7 +320,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="drama">
                 <img class="portada" src="./images/bad.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>BREAKING BAD</h2>
@@ -337,7 +337,7 @@
             </div>
         </a>
         <a href="#">
-        <div class="container">
+        <div class="container" data-category="romance">
             <img class="portada" src="./images/betty.jpeg" alt="casa de papel">
             <div class="info">
                 <h2>BETTY LA FEA</h2>
@@ -354,7 +354,7 @@
         </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="terror">
                 <img class="portada" src="./images/dahmer.webp" alt="casa de papel">
                 <div class="info">
                     <h2>DAHMER</h2>
@@ -371,7 +371,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="fantasia">
                 <img class="portada" src="./images/dark.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>DARK</h2>
@@ -388,7 +388,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="drama">
                 <img class="portada" src="./images/doctor.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>THE GOOD DOCTOR</h2>
@@ -405,7 +405,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="fantasia">
                 <img class="portada" src="./images/dragon.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>LA CASA DEL DRAGON</h2>
@@ -422,7 +422,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="romance">
                 <img class="portada" src="./images/edu.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>SEX EDUCATION</h2>
@@ -439,7 +439,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="comedia">
                 <img class="portada" src="./images/horse.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>BOJACK HORSEMAN</h2>
@@ -456,7 +456,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="drama">
                 <img class="portada" src="./images/narcos.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>NARCOS</h2>
@@ -473,7 +473,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="accion">
                 <img class="portada" src="./images/palpito.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>PALPITO</h2>
@@ -490,7 +490,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="comedia">
                 <img class="portada" src="./images/south.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>SOUTH PARK</h2>
@@ -507,7 +507,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="terror">
                 <img class="portada" src="./images/stranger.webp" alt="casa de papel">
                 <div class="info">
                     <h2>STRANGER THINGS</h2>
@@ -524,7 +524,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="drama">
                 <img class="portada" src="./images/you.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>YOU</h2>
@@ -541,7 +541,7 @@
             </div>
         </a>
         <a href="#">
-            <div class="container">
+            <div class="container" data-category="terror">
                 <img class="portada" src="./images/sabrina.jpeg" alt="casa de papel">
                 <div class="info">
                     <h2>SABRINA</h2>
@@ -558,25 +558,28 @@
             </div>
         </a>
     </section>
-    <script src="./js/modal.js"></script>
-        <script>
-    // Obtener los elementos relevantes
-    const searchInput = document.getElementById('searchInput');
-    const peliculasContainer = document.querySelector('.peliculas');
-    const peliculas = Array.from(peliculasContainer.querySelectorAll('.container'));
+    <script>
+        // Obtener los elementos relevantes
+        const searchInput = document.getElementById('searchInput');
+        const peliculasContainer = document.querySelector('.peliculas');
+        const peliculas = Array.from(peliculasContainer.querySelectorAll('.container'));
 
-    // Agregar un evento de entrada al campo de búsqueda
-    searchInput.addEventListener('input', () => {
-        const searchTerm = searchInput.value.toLowerCase();
+        // Agregar un evento de entrada al campo de búsqueda
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.toLowerCase();
 
-        // Filtrar y mostrar u ocultar los elementos según el término de búsqueda
-        peliculas.forEach(pelicula => {
-            const title = pelicula.querySelector('h2').textContent.toLowerCase();
-            if (title.includes(searchTerm)) {
-                pelicula.style.display = 'block';
-            } else {
-                pelicula.style.display = 'none';
-            }
+            // Filtrar y mostrar u ocultar los elementos según el término de búsqueda
+            peliculas.forEach(pelicula => {
+                const title = pelicula.querySelector('h2').textContent.toLowerCase();
+                if (title.includes(searchTerm)) {
+                    pelicula.style.display = 'block';
+                } else {
+                    pelicula.style.display = 'none';
+                }
+            });
         });
-    });
-</script>
+    </script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/filtro.js"></script>
+</body>
+</html>
