@@ -260,6 +260,10 @@ button:hover{
     cursor: pointer;
 }
 
+#trailerIframe{
+    width: 100%;
+}
+
 /* ... Tu CSS posterior ... */
 
 
@@ -335,10 +339,15 @@ button:hover{
             flex-wrap: wrap;
         }
         .titulo {
-            padding-left: 100px;
+            padding-left: 130px;
         }
         .container h2{
             font-size: 100%;
+        }
+        .peliculas{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .container span{
             font-size: 70%;
@@ -367,7 +376,7 @@ button:hover{
             padding-right: 0;
         }
         .menu a{
-            padding-right: 35px;
+            padding-right: 45px;
         }
         #login {
             padding-left: 1px;
@@ -413,6 +422,7 @@ button:hover{
             width: 38vw;
             
         }
+
 }
 @media screen and (max-width:352px){
     .titulo{
